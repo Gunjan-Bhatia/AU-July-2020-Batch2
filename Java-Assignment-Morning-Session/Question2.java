@@ -1,4 +1,4 @@
-//Question 2. Write a Java program to get a reverse order view of the keys contained in a given map.
+//Question 2. Write a Java program to get a reverse order view of the keys contained in a given map
 
 import java.util.*;
 
@@ -19,3 +19,10 @@ public class Question2 {
 		System.out.println("Reverse order view of the keys: " + map.descendingKeySet());
 	}
 }
+
+/*
+Output
+Orginal content: {C1=Green, C2=Red, C3=White, C4=Black}
+Reverse order view of the keys: [C4, C3, C2, C1]
+ 
+ */
