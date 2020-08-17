@@ -1,3 +1,4 @@
+#2. Design a query to provide a list of doctors, which department they belong to and patients treated by them (if any).
 Use hospital_management_system;
 
 
