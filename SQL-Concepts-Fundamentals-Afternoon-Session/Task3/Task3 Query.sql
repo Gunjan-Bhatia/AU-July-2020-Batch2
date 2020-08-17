@@ -1,3 +1,4 @@
+#3. Query to provide the count of patients discharged per day in the last week. 
 Use hospital_management_system;
 
 
