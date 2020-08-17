@@ -1,5 +1,3 @@
-// Write code to create a calculator that involve divide, add, subtract, multiply operation.
-
 import java.util.*;
 
 public class Calculator {
@@ -34,8 +32,6 @@ public class Calculator {
 	}
 
 	public static int evaluate(String expression) throws Exception {
-
-                
 		char token[] = expression.toCharArray();
 
 		Stack<Integer> values = new Stack<>();
@@ -82,8 +78,15 @@ public class Calculator {
 
 				operator.push(token[i]);
 			} 
-			else
+			else {
+			try {
 				throw new Exception("Expression invalid.");
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			}
 		}
 
 		while (!operator.empty() && !values.isEmpty())
@@ -114,8 +117,38 @@ public class Calculator {
 
 				e.printStackTrace();
 			}
+			System.out.println();
 		}
 		s.close();
 	}
 
 }
+/* Output
+ Enter number of test cases
+5
+Enter expression
+-5+8*6
+Result : 43
+
+Enter expression
+(55+9)%9
+64
+Result : 1
+
+Enter expression
+20+-3*5/8
+Result : 19
+
+Enter expression
+5+15/3*2-8%3
+Result : 13
+
+Enter expression
+5^2
+java.lang.Exception: Expression invalid.
+Result : 2
+
+	at Calculator.evaluate(Calculator.java:83)
+	at Calculator.main(Calculator.java:115)
+
+ */
