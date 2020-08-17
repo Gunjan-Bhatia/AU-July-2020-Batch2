@@ -9,7 +9,10 @@ class Student implements Serializable {
 	private static final long serialVersionUID = 10L;
 
 	String email;
-	transient String password; // making it transient for security purpose
+	//At the time of serialization, since we don't want to save value of a particular password, dob  in a file, 
+	//that's why I am using transient keyword. When JVM comes across transient keyword, 
+	//it ignores original value of the variable and save default value of that variable data type.
+	transient String password; // making it transient for security purpose so it won't be 
 	String name;
 	Date dob;
 	transient int age; // making it transient because it can be calculated from date of birth(dob)
@@ -87,3 +90,23 @@ public class Question4 {
 		}
 	}
 }
+
+/* Output
+ Data before Deserialization.
+
+Email = abc@gmail.com
+password = passw0rd
+Name = abc
+D.O.B = Wed Oct 26 00:00:00 IST 3898
+Age = 21
+
+Data after Deserialization.
+
+Email = abc@gmail.com
+password = null
+Name = abc
+D.O.B = Wed Oct 26 00:00:00 IST 3898
+Age = 0
+
+
+ */
