@@ -1,4 +1,4 @@
-// Question 3. Write your own unchecked Exception and throw it from you counter programme which counts 1 to 100.
+//Question 3. Write your own unchecked Exception and throw it from you counter programme which counts 1 to 100.
 //When you get Prime no while counting then throw this Exception and catch this to print you exception message.
 
 class primeNumberException extends Exception{
@@ -58,3 +58,108 @@ public class Question3 {
 		counter(0, visited);
 	}
 }
+
+/*
+Output
+2 is prime number
+primeNumberException
+3 is prime number
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+5 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+7 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+11 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+13 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+17 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+19 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+primeNumberException
+23 is prime number
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+29 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+31 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+37 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+41 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+43 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+47 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+53 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+59 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+61 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+67 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+71 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+73 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+79 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+83 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+89 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+97 is prime number
+primeNumberException
+	at Question3.counter(Question3.java:41)
+	at Question3.main(Question3.java:58)
+
+ */
