@@ -1,0 +1,27 @@
+var inputArray = [];
+var size = 7;
+for(var i = 0; i<size; i++)
+    inputArray[i] = prompt('Enter Element ' + (i+1));
+console.log(inputArray);
+
+console.log("Filter and remove elements less than 15");
+inputArray = inputArray.filter((a) => a>15);
+console.log(inputArray);
+
+console.log("All values and their indexes");
+inputArray.forEach((value,i)=>{
+console.log("element "+ value+" is at index " + i)
+});
+
+console.log("Map and multiply by 10");
+inputArray=inputArray.map((a) =>a*10);
+console.log(inputArray);
+
+(7) ["15", "18", "19", "11", "12", "10", "9"]
+Filter and remove elements less than 15
+(2) ["18", "19"]
+All values and their indexes
+element 18 is at index 0
+element 19 is at index 1
+Map and multiply by 10
+(2) [180, 190]

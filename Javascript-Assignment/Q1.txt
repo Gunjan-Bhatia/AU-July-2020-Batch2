@@ -1,0 +1,128 @@
+Q1.Different array functions use with example and regular expression fucntions example.
+
+-> concat()
+arr1 = ['red', 'green']
+arr2 =  ['blue', 'yellow', 'black']
+arr1.concat(arr2)
+Output : (5) ["red", "green", "blue", "yellow", "black"]
+
+->every()
+arr1.every((str) => str.length<=10)
+Output : true
+
+-> filter()
+arr2.filter((str) => (str.length < 6))
+Output : (2) ["blue", "black"]
+
+-> forEach()
+arr2.forEach((str) =>{console.log(str+' is a colour');})
+Output :
+blue is a colour
+yellow is a colour
+black is a colour
+
+-> indexOf()
+arr2.indexOf('blue')
+Output : 0
+arr2.indexOf('pink')
+Output : -1
+
+-> lastIndexOf()
+arr3 = ['blue', 'yellow', 'black', 'yellow', 'pink']
+arr3.lastIndexOf('yellow')
+Output : 3
+
+-> map()
+arr2.map((str) => str + " is colour")
+Output: is colour", "yellow is colour", "black is colour"]
+
+->pop()
+arr2.pop()
+Output : "black"
+
+->push()
+arr1.push('black')
+Output : 3
+console.log(arr1)
+(3) ["red", "green", "black"]
+
+-> reduce()
+arr2.reduce((str1,str2)=>str1+" and "+str2)
+Output : "blue and yellow"
+
+-> reduceRight()
+arr2.reduceRight((str1,str2)=>str1+" and "+str2)
+Output : "yellow and blue"
+
+-> reverse()
+arr1.reverse()
+Output : (3) ["black", "green", "red"]
+
+-> shift()
+arr3
+(4) ["yellow", "black", "yellow", "pink"]
+arr3.shift()
+Output : "yellow"
+
+-> slice()
+arr2.slice(1,3)
+Output : (2) ["blue", "neone"]
+arr2
+(7) ["yellow", "blue", "neone", "brown", "silver", "sky", "white"]
+
+-> some()
+arr2.some((str) => (str.length<6))
+Output : true
+
+-> sort()
+arr2.sort()
+Output : (7) ["blue", "brown", "neone", "silver", "sky", "white", "yellow"]
+
+-> splice()
+arr2.splice(3,4)
+Output : (4) ["silver", "sky", "white", "yellow"]
+
+-> toString()
+arr2.toString()
+Output : "blue,brown,neone"
+
+-> unshift()
+arr2.unshift('green', 'golden', 'silver')
+Output : 6
+arr2
+(6) ["green", "golden", "silver", "blue", "brown", "neone"]
+
+-------------------Regular Expresssions----------------
+
+sentence = "Let's play around functions of regular expression";
+
+-> exec()
+pattern = /e./
+Output : /e./
+
+->test()
+pattern.test(sentence)
+Output : true
+
+pattern.exec(sentence)
+Output : ["et", index: 1, input: "Let's play around functions of regular expression", groups: undefined]
+
+-> match()
+sentence.match('pl')
+Output : ["pl", index: 6, input: "Let's play around functions of regular expression", groups: undefined]
+
+-> search()
+sentence.search('play')
+Output : 6
+
+-> replace()
+sentence.replace('e','a')
+Output : "Lat's play around functions of regular expression"
+
+-> split()
+entence.split(' ')
+Output : (7) ["Let's", "play", "around", "functions", "of", "regular", "expression"]
+
+Q1.2 Difference between \n and \r.
+
+In windows, the \n moves to the beginning of the next line. The \r moves to the beginning of the current line, without moving to the next line. 

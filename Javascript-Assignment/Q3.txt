@@ -1,0 +1,13 @@
+var string = prompt("Enter String which is to be tested");
+console.log(string);
+
+pattern1 = /^The.*hello$/
+console.log("Test1 result : "+pattern1.test(string));
+
+
+pattern2 = /h[aeiou]?.t/
+console.log("Test2 result : " + pattern2.test(string));
+
+The sun is very hot and person on other side of road is saying hello
+Test1 result : true
+Test2 result : true
